@@ -1,0 +1,508 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Nav Bar */
+
+nav {
+    display: flex;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.navbar {
+    align-items: center;
+}
+
+.navbar_left ul {
+    display: inline;
+    padding: 0;
+}
+
+.navbar_left li {
+    display: inline;
+    list-style: none;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    padding: 0 5px;
+}
+
+.navbar_left a {
+    text-decoration: none;
+    color: black;
+}
+
+.animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+}
+
+.animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #3a5a40;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.logo {
+    background-image: url("Pictures/Sean\ Allen\ Greenall\ Logo.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 300px;
+}
+
+.contact_button {
+    display: flex;
+    width: 200px;
+    justify-content: right;
+}
+
+.contact_button a {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #ebf2fa;
+    background-color: #9dc3c2;
+    padding: 25px 40px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.contact_button a:hover {
+    background-color: #a1cca5;
+    color: black;
+}
+
+/* Introduction */
+
+.intro {
+    display: flex;
+    height: 630px;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro h1 {
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    padding-left: 80px;
+    color: #3a5a40;
+}
+
+.intro p {
+    padding-left: 80px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 500px;
+}
+
+.headshot {
+    display: inline-block;
+    width: 700px;
+    height: 400px;
+    background-image: url("Pictures/Buttermere.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.name {
+    display: inline-block;
+    width: 600px;
+}
+
+/* About Me */
+
+.about_me {
+    background-color: #fcf9f5;
+    height: 400px;
+}
+
+.about_me h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    padding-left: 80px;
+    color: #3a5a40;
+    padding: 40px 0;
+    text-align: center;
+    margin: 0 250px;
+}
+
+.about_me p {
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    word-spacing: 5px;
+    line-height: 30px;
+    text-align: justify;
+    margin: 0 250px;
+}
+
+/* Skills */
+
+.skill_container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 800px;
+    padding: 100px 0;
+}
+
+.skills {
+    display: inline-block;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.skills h6 {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+.skills h2 {
+    display: inline;
+    padding: 0 15px 0 0;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: #3a5a40;
+}
+
+.skills p {
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    word-spacing: 3px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.photo {
+    display: inline-block;
+    height: 800px;
+    width: 600px;
+    background-image: url("Pictures/Lake.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+/* Projects */
+
+.projects_container {
+    height: 800px;
+    background-color: #fcf9f5;
+    text-align: center;
+}
+
+.projects_container a {
+    text-decoration: none;
+}
+
+.projects_container h6 {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    padding-top: 80px;
+}
+
+.projects_container h4 {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.projects_container h2 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: #3a5a40;
+}
+
+.projects {
+    display: flex;
+    height: 500px;
+    margin: 0 30px;
+    justify-content: space-between;
+}
+
+.blog_image {
+    width: 400px;
+    height: 300px;
+    background-image: url("Pictures/blog_thumbnail.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.blog h3 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #3a5a40;
+}
+
+.blog p {
+    width: 400px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    word-spacing: 3px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.gourmet_image {
+    width: 400px;
+    height: 300px;
+    background-image: url("Pictures/gourmet_thumbnail.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.gourmet h3 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #3a5a40;
+}
+
+.gourmet p {
+    width: 400px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    word-spacing: 3px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.pricing_image {
+    width: 400px;
+    height: 300px;
+    background-image: url("Pictures/Pricing_panel.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.pricing h3 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #3a5a40;
+}
+
+.pricing p {
+    width: 400px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    word-spacing: 3px;
+    line-height: 30px;
+    text-align: center;
+}
+
+/* Hobbies */
+
+.hobbies_container {
+    height: 1000px;
+    text-align: center;
+}
+
+.hobbies_container h6 {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    padding-top: 60px;
+}
+
+.hobbies {
+    display: flex;
+    height: 500px;
+    margin: 0 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hobbies h3 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #3a5a40;
+}
+
+.design {
+    width: 400px;
+    height: 300px;
+    background-image: url("Pictures/Photoshop.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+
+.hiking {
+    width: 400px;
+    height: 300px;
+    background-image: url("Pictures/Pendle.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+
+.photography {
+    width: 400px;
+    height: 300px;
+    background-image: url("Pictures/Tree.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+
+.video {
+    width: 400px;
+    height: 300px;
+    background-image: url("Pictures/Premier_Pro.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+
+.PC {
+    width: 400px;
+    height: 300px;
+    background-image: url("Pictures/Computer.jpeg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+
+.cooking {
+    width: 400px;
+    height: 300px;
+    background-image: url("Pictures/Pasta.jpeg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+
+/* Contact */
+
+.contact_container {
+    display: block;
+    background-color: #3b514e;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact_container h2 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+
+.contact_left {
+    display: inline-block;
+    height: 500px;
+    width: 600px;
+    margin: 70px 20px 20px 20px;
+    background-image: url("Pictures/Sean\ Allen\ Greenall\ Logo\ Tansparent.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact_right {
+    display: inline-block;
+    max-width: 600px;
+    margin: 20px;
+}
+
+#message_form label {
+    display: block;
+}
+
+#message_form input {
+    width: 180px;
+}
+
+#message_form ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#message_form li {
+    display: inline-block;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: white;
+    padding: 20px 20px 20px 0;
+}
+
+.contact_button_two a {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #ebf2fa;
+    background-color: #9dc3c2;
+    padding: 25px 40px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.contact_button_two a:hover {
+    background-color: #a1cca5;
+    color: black;
+}

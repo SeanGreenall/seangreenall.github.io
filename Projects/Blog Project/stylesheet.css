@@ -1,0 +1,146 @@
+/* Header */
+
+h1, h2, h3, h4, p{
+    font-family: "Raleway", sans-serif;
+    font-weight: lighter;
+    margin: 15px;
+}
+
+.header-text{
+    text-align: center;
+    padding: 20px;
+}
+
+/* Grid */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    grid-gap: 40px;
+    grid-template-areas: 
+    'title me'
+    'entry work'
+    'none tag';
+    margin: 3%;
+}
+
+.grid-item-1{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    grid-area: title;
+    background-color: white;
+    grid-row-start: 1 ;
+    grid-row-end: 16;
+}
+
+.box-image-buttermere{
+    background-image: url(Buttermere-37.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50%;
+    text-indent: -999999px;
+}
+
+.grid-item-2{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    grid-area: me;
+    background-color: white;
+    grid-row-start: 1;
+    grid-row-end: 15;
+}
+
+.box-image-me{
+    background-image: url(Me.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60%;
+    text-indent: -9999999px;
+}
+
+.grid-item-3{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    grid-area: entry;
+    background-color: white;
+    grid-row-start: 16;
+    grid-row-end: 32;
+}
+
+.box-image-anglezarke{
+    background-image: url(Anglezarke-53.jpg);
+    background-position: center;
+    background-size: 100%;
+    width: 100%;
+    height: 50%;
+    text-indent: -999999px;
+}
+
+.grid-item-4{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    grid-area: work;
+    background-color: white;
+    grid-row-start: 15;
+    grid-row-end: 29;
+}
+
+.locations-header{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+    margin: 0;
+}
+
+.locations-header h2{
+    display: inline;
+}
+
+h2:hover{
+    background-color: black;
+    color: white;
+}
+
+.grid-item-5{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    grid-area: tag;
+    background-color: white;
+    grid-row-start: 29;
+    grid-row-end: 36;
+}
+
+.tags-header{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 80px;
+    padding-top:10px;
+    margin: 0;
+}
+
+.tags{
+    text-align: center;
+}
+
+.tags p{
+    background-color: whitesmoke;
+    display: inline-block;
+}
+
+/* Footer */
+
+.contacts-container{
+    background-color: grey;
+    background-size: 100%;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+}
+
+.contacts-container p{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}

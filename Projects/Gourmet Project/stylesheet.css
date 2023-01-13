@@ -1,0 +1,198 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 2vw;
+}
+
+h4 {
+    font-size: 1.3vw;
+}
+
+p {
+    font-size: 1vw;
+}
+
+hr {
+    margin: 0 13%;
+}
+
+.header-container {
+    background-color: white;
+    background-size: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 500;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-list {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin: 5px 20px;
+    padding-top: 0px;
+    letter-spacing: 6px;
+    font-size: 1.1vw;
+}
+
+.head-image {
+    background-image: url(headburger.jpeg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 800px;
+    padding-top: 20px;
+}
+
+/* About */
+
+.about {
+    height: 650px;
+    width: 100;
+    padding: 60px 200px;
+    max-width: 100%;
+}
+
+.about-image {
+    background-image: url(AboutImage.jpeg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 650px;
+    width: 500px;
+    text-indent: -9999999px;
+}
+
+.about-info {
+    display: inline-block;
+    position: absolute;
+    height: 650px;
+    width: 550px;
+    text-align: center;
+    margin: 20px;
+}
+
+.about-info h1,
+h3,
+h4 {
+    letter-spacing: 6px;
+    font-weight: lighter;
+    margin: 40px;
+}
+
+.about-info p {
+    display: block;
+    letter-spacing: 2px;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 25px;
+}
+
+/* Menu */
+
+.menu {
+    height: 650px;
+    width: 100;
+    padding: 60px 200px;
+}
+
+.menu-info {
+    display: inline-block;
+    height: 650px;
+    width: 500px;
+    text-align: center;
+    margin: 20px;
+}
+
+.menu-info h1,
+h3,
+h4 {
+    letter-spacing: 6px;
+    font-weight: lighter;
+    margin: 25px 40px;
+}
+
+.menu-image {
+    background-image: url(MenuImage.jpeg);
+    background-position: center;
+    background-size: 140%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 650px;
+    width: 500px;
+    text-indent: -9999999px;
+    position: absolute;
+}
+
+.menu-info p {
+    color: grey;
+    display: block;
+    letter-spacing: 2px;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 25px;
+}
+
+/* Contact */
+
+.contact {
+    height: 650px;
+    width: 100;
+    padding: 60px 200px;
+}
+
+
+.contact h1,
+h4 {
+    letter-spacing: 6px;
+    font-weight: lighter;
+    margin: 25px 40px;
+    text-align: center;
+}
+
+.contact h4 {
+    color: cadetblue;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    margin: 25px 40px;
+    text-align: center;
+}
+
+.contact p {
+    color: grey;
+    display: block;
+    letter-spacing: 2px;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 25px;
+    margin: 25px 40px;
+}
+
+.details {
+    margin: 0 40px;
+    height: 40px;
+    width: 90%;
+}
+
+.submit {
+    color: grey;
+    letter-spacing: 2px;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 25px;
+    margin: 25px 40px;
+    height: 40px;
+    width: 120px;
+}
