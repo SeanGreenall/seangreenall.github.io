@@ -8,6 +8,9 @@ body {
 
 /* Nav Bar */
 
+.mobile {
+    display: none;
+}
 nav {
     display: flex;
     height: 300px;
@@ -505,4 +508,41 @@ nav {
 .contact_button_two a:hover {
     background-color: #a1cca5;
     color: black;
+}
+
+@media (max-width: 600px) {
+
+    .mobile {
+        display: flex;
+        justify-content: center;
+        width: auto;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .intro {
+        display: none;
+    }
+
+    .about_me {
+        display: none;
+    }
+
+    .skill_container {
+        display: none;
+    }
+
+    .projects_container {
+        display: none;
+    }
+
+    .hobbies_container {
+        display: none;
+    }
+
+    .contact_container {
+        display: none;
+    }
 }
